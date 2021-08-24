@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="https://signotec.com/medien/bilder/highlight_icon_slideshow.jpg"
+    />
+
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="slideShow.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>Slide Show</h3>
+      </div>
+      <div class="box">
+        <img id="image" onmouseenter="hover()" onmouseleave="unhover()" />
+        <img
+          src="/assets/leftArrow.png"
+          alt="cats"
+          class="leftArrow"
+          onclick="backward(false)"
+          onmouseenter="hover()"
+          onmouseleave="unhover()"
+        />
+        <img
+          src="/assets/rightArrow.png"
+          alt="cats"
+          class="rightArrow"
+          onclick="forward(true)"
+          onmouseenter="hover()"
+          onmouseleave="unhover()"
+        />
+      </div>
+    </div>
+    <script src="slideShow.js"></script>
+  </body>
+</html>
